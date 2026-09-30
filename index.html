@@ -124,10 +124,11 @@ a{
 
 .top{
   display:grid;
-  grid-template-columns:minmax(0,1.8fr) minmax(340px,.72fr);
+  grid-template-columns:minmax(0,1.72fr) minmax(330px,.78fr);
+  align-items:start;
   background:#fff;
 }
-
+      
 
 /* =========================
    HERO
@@ -137,33 +138,32 @@ a{
   position:relative;
   overflow:hidden;
   background:#15243b;
-  display:flex;
-  align-items:flex-start;
+  aspect-ratio:16 / 9;
 }
 
 .hero-image{
   display:block;
   width:100%;
-  height:auto;
-  min-height:0;
-  object-fit:contain;
-  object-position:center top;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
 }
-
+      
 
 /* =========================
    QR PANEL
 ========================= */
 
 .qr-panel{
-  padding:28px;
+  padding:22px;
   background:#f8fafc;
   display:flex;
   flex-direction:column;
+  min-height:0;
 }
-
+      
 .qr-header{
-  padding:24px 18px;
+  padding:19px 15px;
   border-radius:25px;
   background:linear-gradient(135deg,#15243b,#263c5d);
   color:#fff;
@@ -171,7 +171,7 @@ a{
 }
 
 .qr-title{
-  font-size:27px;
+  font-size:23px;
   font-weight:800;
   line-height:1.15;
 }
@@ -185,9 +185,9 @@ a{
 
 .qr-box{
   width:100%;
-  max-width:400px;
-  margin:22px auto 27px;
-  padding:16px;
+  max-width:330px;
+  margin:18px auto 20px;
+  padding:13px;
   background:#fff;
   border-radius:25px;
   box-shadow:0 10px 30px rgba(20,32,51,.10);
